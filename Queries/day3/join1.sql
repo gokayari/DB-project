@@ -1,0 +1,23 @@
+select * from CUSTOMER;
+
+select * from ADDRESS;
+
+select FIRST_NAME, LAST_NAME, ADDRESS, PHONE
+from CUSTOMER join ADDRESS
+on CUSTOMER.ADDRESS_ID = ADDRESS.ADDRESS_ID;
+
+select FIRST_NAME, LAST_NAME, ADDRESS, PHONE
+from CUSTOMER c join ADDRESS a   --c is Customer table shorter
+on c.ADDRESS_ID = a.ADDRESS_ID;
+
+select FIRST_NAME, LAST_NAME, ADDRESS, PHONE
+from CUSTOMER c left outer join ADDRESS a
+on c.ADDRESS_ID = a.ADDRESS_ID;
+
+select FIRST_NAME, LAST_NAME, ADDRESS, PHONE
+from CUSTOMER c right outer join ADDRESS a
+on c.ADDRESS_ID = a.ADDRESS_ID;
+
+select FIRST_NAME, LAST_NAME, ADDRESS, PHONE
+from CUSTOMER c full outer join ADDRESS a
+on c.ADDRESS_ID = a.ADDRESS_ID;
