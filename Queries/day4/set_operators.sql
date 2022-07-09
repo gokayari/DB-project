@@ -32,3 +32,14 @@ select  first_name,count(*)
 from employees
 group by first_name
 having count(*) >1;
+
+
+select * from regions;
+
+select * from departments;
+
+select * from EMPLOYEES;
+
+select FIRST_NAME, LAST_NAME, SALARY, JOB_ID
+from EMPLOYEES
+where ROWNUM < 6;
