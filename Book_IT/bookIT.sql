@@ -16,3 +16,5 @@ join campus c on u.campus_id = c.id
 where firstname='Ase';
 
 select count(*) from users;
+
+select * from users;
