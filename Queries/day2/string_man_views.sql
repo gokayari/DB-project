@@ -30,7 +30,7 @@ order by "length_name" desc;
 select substr(FIRST_NAME,0,1)||'.'||substr(LAST_NAME,0,1) as "initials"
 from employees;     --A.L,  G.A, ...
 
-select substr(FIRST_NAME,0,1)||'.'||substr(LAST_NAME,0,1) as "initials",
+select substr(FIRST_NAME,0,1)||'.'||substr(LAST_NAME,0,1) as initials,
        FIRST_NAME||' '||LAST_NAME as "full_name",
        lower(EMAIL||'@gmail.com') as "full_email"
        from EMPLOYEES;
